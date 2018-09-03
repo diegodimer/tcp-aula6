@@ -26,6 +26,8 @@ public class TestaExpressaoLogica {
 		valoresVariaveis.put("C", true);
 		valoresVariaveis.put("D", false);
 		
-		System.out.println(expr.eval(valoresVariaveis));
+		//System.out.println(expr.eval(valoresVariaveis));
+		System.out.println(new ExpressaoXor(new ExpressaoAtomica("B"), new ExpressaoAtomica("D")));
+		System.out.println((new ExpressaoXor(new ExpressaoAtomica("B"), new ExpressaoAtomica("D"))).eval(valoresVariaveis));
 	}
 }
